@@ -1,13 +1,8 @@
 import streamlit as st
 import glob
 import json
-import pyttsx3
 import base64
 from api_communication import save_transcript
-
-text_speech = pyttsx3.init()
-voice = text_speech.getProperty('voices')
-text_speech.setProperty('voice', voice[1].id)
 
 st.title("PODCAST SUMMARIES")
 
@@ -17,8 +12,6 @@ st.sidebar.markdown('For podcast episodes,Pls visit **_Listen Notes_** website a
 st.sidebar.write("[Go to ListenNotes](https://www.listennotes.com/)")
 episode_id = st.sidebar.text_input("Episode ID")
 button = st.sidebar.button("Get Episode summary", on_click=save_transcript, args=(episode_id,))
-
-chapters_info = {}
 
 
 def add_bg_from_local(image_file):
