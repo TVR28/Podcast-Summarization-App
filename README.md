@@ -3,4 +3,3 @@
 
 [Get the Podcast Summarization App here](https://tvr28-podcast-summarization-app-main-fy2ugn.streamlitapp.com/)
 
-![GitHub Logo](https://d1m75rqqgidzqn.cloudfront.net/images/logo.png) Format: ![Alt Text](url) 
